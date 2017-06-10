@@ -1,50 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="{{asset('/style/css/ch-ui.admin.css')}}">
-	<link rel="stylesheet" href="{{asset('/style/font/css/font-awesome.min.css')}}">
-	<title>后台</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="{{asset('/style/admin/admin.css')}}">
+    <title>后台管理系统</title>
 </head>
-<body style="background:#F3F3F4;">
-	<div class="login_box">
-		<h1>Blog</h1>
-		<h2>欢迎使用博客管理平台</h2>
-		<div class="form">
-			@if(count($errors)>0)
-				<div class="mark">
-					@if(is_object($errors))
-						@foreach($errors->all() as $error)
-							<p style="color:red">{{$error}}</p>
-						@endforeach
-					@else
-						<p style="color:red">{{$errors}}</p>
+
+<body onload="if(top!==self){top.location.href='/auth/login';}">
+
+<div class="abs" style="width:100%;height:100%;top:0px;left:0px;background:#E4E8EB">
+    <div class="table">
+        <div class="tableCell">
+                <div class="wrapBox rel" style="z-index:3;">
+                   <div class="title"><img src="/style/admin/logo.gif" alt=""><p>后台管理系统</p></div>
+               		<div class="logonBox">
+                        <form action="" method="post" name="Login" onsubmit="return checkForm();" >
+                        {{csrf_field()}}
+                         <div class="wrap">
+                            <div class="input"><input type="text" class="inp un" value="{{@$user_name}}" name="user_name" placeholder="请输入账号"/></div>
+                            <div class="input"><input type="password" class="inp pwd" name="password" placeholder="请输入密码"/></div>
+                            <div class="input rel">
+                                <input name="verify" type="text" class="inp input_verify" onkeyup="this.value=this.value.toUpperCase()"  placeholder="请输入验证码"/>
+                                <img class="abs" id="verifyImg" src="{{url('admin/code')}}" border="0" align="absmiddle" onclick="this.src='{{url('admin/code')}}?'+Math.random()" style=" cursor:pointer">
+                            </div>
+                            <input type="hidden" name="formact" value="dologin" />
+                         </div>
+                         <button class="trans">登&nbsp;&nbsp;录</button>
+                        </form>
+                   </div>
+                    @if(count($errors)>0)
+						<div class="mark">
+							@if(is_object($errors))
+								@foreach($errors->all() as $error)
+									<p style="color:red">{{$error}}</p>
+								@endforeach
+							@else
+								<p style="color:red">{{$errors}}</p>
+							@endif
+						</div>
 					@endif
-				</div>
-			@endif
-			<form action="" method="post">
-			{{csrf_field()}}
-				<ul>
-					<li>
-					<input type="text" name="user_name" class="text"/>
-						<span><i class="fa fa-user"></i></span>
-					</li>
-					<li>
-						<input type="password" name="password" class="text"/>
-						<span><i class="fa fa-lock"></i></span>
-					</li>
-					<li>
-						<input type="text" class="code" name="code" onkeyup="this.value = this.value.toUpperCase();"/>
-						<span><i class="fa fa-check-square-o"></i></span>
-						<img src="{{url('admin/code')}}" alt="" onclick="this.src='{{url('admin/code')}}?'+Math.random()">
-					</li>
-					<li>
-						<input type="submit" value="立即登陆"/>
-					</li>
-				</ul>
-			</form>
-			<p><a href="#">返回首页</a> &copy; 2016 Powered by <a href="{{url('/')}}" target="_blank">{{url('/')}}</a></p>
-		</div>
-	</div>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/JavaScript">
+    function SetFocus(){
+        if (document.Login.user_name.value=="") document.Login.user_name.focus();
+        else document.Login.user_name.select();
+    }
+    function fleshVerify(){
+        var timenow = new Date().getTime();
+    }
+    function checkForm(){
+        if(document.Login.user_name.value==""){alert('No Account !');return false;}
+        if(document.Login.password.value==""){alert('No Password !');return false;}
+        if(document.Login.verify.value==""){alert('No Verify Code !');return false;}
+    }
+    SetFocus();
+</script>
 </body>
 </html>

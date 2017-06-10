@@ -1,0 +1,68 @@
+.header{background:linear-gradient(#FF6669,#FE2E30);background-color:#FE2E30;}
+.header a{color:#FFDFE0;}
+.header h1{border-color:#DF292C;}
+.header h1 a{margin-right:10px;}
+.header h2{float:left;padding:0 10px;height:50px;line-height:70px;color:#fff;border-left:1px solid #FF6B6D;}
+.header .menu li{border-left:1px solid #DF292C;border-right:1px solid #FF6B6D;}
+.header .right_menu{border-left:1px solid #FF6B6D;border-right:1px solid #DF292C;}
+.header .right_menu li.hover .link{background-color:#FF6B6D;}
+.main{padding:20px 0;}
+.top_title{height:45px;border-bottom:1px solid #3DC9F4;}
+.top_title h3{float:left;font-family:Microsoft YaHei;font-weight:normal;font-size:28px;margin-right:10px;}
+.top_title p{float:left;margin-top:15px;color:#ff6600;}
+.money_info{padding:20px 0;font-size:14px;border-bottom:1px solid #f2f2f2;}
+.money_info li{margin:10px 0 0;}
+.money_info li input{margin-right:5px;}
+.choose_way{margin:20px 0 0;}
+.choose_way .title h6{float:left;margin:15px 10px 0 0;font-size:14px;color:#555;}
+.choose_way .submit_area{padding-left:50px;}
+.choose_way .submit_area .edit_data li .w_2 input{margin-right:10px;}
+.choose_way .submit_area .edit_data li .w_2 .btn{font-size:14px;font-weight:bold;}
+.check_order{font-size:14px;margin:20px 0;}
+.check_order li{margin:10px 0 0;}
+.change_order .tip{font-size:12px;}
+/* tab_bank */
+.tab_bank{position:relative;top:5px;}
+.tab_bank li{float:left;text-align:center;margin-right:5px;cursor:pointer;width:129px;height:41px;font-size:14px;text-decoration:none;font-weight:bold;color:#666;line-height:41px;position:relative;border:1px solid #A6EAFF;border-bottom:none;;-moz-border-radius:12px;-webkit-border-radius:3px;border-radius:3px;border-bottom-right-radius:0;border-bottom-left-radius:0;}
+.tab_bank li img{margin:7px 0 0;}
+.tab_bank li.current{position:relative;top:-4px;background:#fff;border:1px solid #3dc9f4;border-bottom-color:#fff;border-top-width:3px;height:43px;line-height:43px;color:#333;}
+.choose_way .contain{padding:50px;border:1px solid #D1F4FF;}
+.choose_way .contain .pay_txt{padding:20px 0;font-size:14px;}
+.choose_way .submit_area .btn_area{margin:20px 0 0;padding-left:100px;}
+/* bank */
+.bank_block{background:#f2f2f2;border-radius:10px;padding:20px;}
+.logo_blank{-moz-inline-stack;display:inline-block;*display:inline;*zoom:1;width:113px;height:27px;background:url(../images/global/logo_blank.gif) no-repeat;text-indent:-5000px;_text-indent:0;overflow:hidden;}
+.logo_zs{background-position:0 1px;}
+.logo_ny{background-position:0 -43px;}
+.logo_js{background-position:0 -89px;}
+.logo_sf{background-position:0 -134px;}
+.logo_yc{background-position:0 -178px;}
+.logo_zg{background-position:0 -223px;}
+.logo_xy{background-position:0 -268px;}
+.logo_gs{background-position:0 -314px;}
+.logo_ms{background-position:0 -358px;}
+.logo_zx{background-position:0 -402px;}
+.logo_gd{background-position:0 -450px;}
+.logo_zsyh{background-position:0 -490px;}
+.logo_pf{background-position:0 -534px;}
+.logo_hf{background-position:0 -579px;}
+.logo_sh{background-position:0 -623px;}
+.logo_hq{background-position:0 -668px;}
+.logo_zd{background-position:0 -707px;}
+.logo_nb{background-position:0 -752px;}
+.logo_jsyh{background-position:0 -801px;}
+.logo_jt{background-position:0 -845px;}
+.logo_gf{background-position:0 -896px;}
+.bank_list li{position:relative;float:left;width:170px;height:47px;background:url(../images/global/ico.gif) no-repeat 0 -143px;cursor:pointer;margin:0 0 -1px -1px;}
+.bank_list li .activeborder{border:2px solid #ff6600;position:absolute;left:0;top:0;display:block;width:166px;height:43px;z-index:10;display:none;}
+.bank_list li.current,.bank_list li:hover{background:#fff7ea;}
+.bank_list li.current .activeborder,.bank_list li:hover .activeborder{display:block;}
+.bank_list li .logo_blank{margin:10px 0 0 10px;}
+.choose_way .con_footer{padding:20px;}
+.q_box{margin:20px 0 0;}
+.q_box .title{padding-bottom:10px;border-bottom:1px solid #f2f2f2;}
+.q_box .title h3{font-size:28px;font-family:Microsoft YaHei;font-weight:normal;}
+.q_box .contain{padding:20px 0;}
+.q_list li{margin:10px 0 0;color:#666;font-weight:bold;}
+.q_list li .a{color:#999;font-weight:normal;padding-left:20px;}
+.q_list li li{margin:0;color:#999;font-weight:normal;}

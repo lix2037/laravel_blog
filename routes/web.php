@@ -42,6 +42,14 @@ Route::group(['prefix' => 'admin','namespace'=>'Admin','middleware'=> 'admin.log
     Route::resource('category','CategoryController');
     Route::post('category/changeOrder','CategoryController@changeOrder');
 
+    //系统配置
+    Route::get('config/index','ConfigController@index');
+
+    //节点
+    Route::get('node/index','NodeController@index');
+
+
+
 });
 Route::any('/wechat','WechatController@serve');
 Route::get('/shareWx','WechatController@shareWx');
@@ -52,4 +60,6 @@ Route::get('/menu_select','WechatController@menu_select');
 
 Route::any('admin/encrypt','Admin\LoginController@encrypt');
 
+Route::get('admin/test','Admin\LoginController@test');
+Route::get('admin/gettest','Admin\LoginController@gettest');
 

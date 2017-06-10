@@ -7,6 +7,10 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'CreateCategoryTable' => $baseDir . '/database/migrations/2016_12_05_171421_create_category_table.php',
+    'CreateDeliverNoteTable' => $baseDir . '/database/migrations/2017_04_03_154637_create_deliver_note_table.php',
+    'CreateDriverTable' => $baseDir . '/database/migrations/2017_04_03_155817_create_driver_table.php',
+    'CreateGdTable' => $baseDir . '/database/migrations/2017_04_03_152316_create_gd_table.php',
+    'CreateMaterialTable' => $baseDir . '/database/migrations/2017_04_03_160303_create_material_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',

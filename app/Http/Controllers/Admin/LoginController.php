@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Input;
 use App\Http\Model\User;
@@ -17,14 +18,16 @@ class LoginController extends CommonController
     public function login()
     {
     	if($input = Input::all()) {
+
+            // dd($input);
             $rules = [
-                'code' => 'required|captcha',
+                'verify' => 'required|captcha',
                 'user_name' => 'required',
                 'password' => 'required|between:6,20',
             ];
             $messages = [
-                'code.required'=> '验证码不能为空',
-                'code.captcha' => '验证码错误，请重试',
+                'verify.required'=> '验证码不能为空',
+                'verify.captcha' => '验证码错误，请重试',
                 'user_name.required'=> '用户名不能为空',
                 'password.required'=> '密码不能为空',
                 'password.between'=> '密码长度在6-20位之间',
@@ -35,7 +38,7 @@ class LoginController extends CommonController
                 if($user){
                     $user_pass = Crypt::Decrypt($user['password']);
                     if($input['password'] != $user_pass){
-                        return back()->with('errors','密码不正确，请重新输入');
+                        return back()->with('errors','密码不正确，请重新输入')->withCookie();
                     }
                 }else{
                     return back()->with('errors','用户名不存在');
@@ -46,7 +49,6 @@ class LoginController extends CommonController
             session(['admin'=>$user]);
             return redirect('admin/index');
     	}else{
-
             session(['admin'=>null]);
     		return view('admin.login');
     	}
@@ -94,6 +96,30 @@ class LoginController extends CommonController
     public function register()
     {
         return view('admin.register');
+    }
+
+    public function test(Request $request)
+    {
+//        $cookie = $request->cookie();
+        $cookie = cookie('name','value',10);
+//        $a = cookie::get('name');
+//        dd($a);
+
+        var_dump($cookie);
+    }
+
+    public function gettest(Request $request)
+    {
+        $cookie = $request->cookie('name');
+//        $cookie = cookie('name','value',10);
+//        $a = cookie::get('name');
+//        dd($a);
+        var_dump($cookie);
+        $cookie = cookie('name','value',10);
+        return response('hahaha')->cookie('name','value',10);
+
+
+
     }
 
 

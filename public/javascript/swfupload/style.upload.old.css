@@ -1,0 +1,231 @@
+body{ font-size:12px; color:#333}
+* { padding: 0; margin: 0; border: 0; }
+ul{ list-style-type:none}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {padding: 0;margin: 0;}
+h3{ font-weight:bold}
+.release{ position:relative; z-index:0;}
+
+.avatar2,.avatar1,.avatar{ height:252px; background:#FFF; position:absolute; z-index:10000px; }
+.avatar1_c{width:428px; height:232px; background: url(avatar1_background.gif); margin:10px; position:relative}
+.avatar1_v{width:428px; height:232px; background: url(avatar1_btn3.gif) no-repeat 60px 118px}
+
+.avatar1_c #imgfileUploader{top:60px; left:60px; position:relative; background:#F00}
+.avatar1_c #imgfileQueue{top:100px; left:50px; position:relative;}
+
+  
+
+.avatar1,.avatar2,.avatar{width:452px;   }
+.avatar1 .percentage {font-size: 300%;  overflow:hidden;}
+
+.avatar dl{ width:425px; height:227px; overflow:hidden;margin:12px 0 0 12px}
+ .avatar dl dt{width:300px; height:227px; float:left; background:#5f5f5f; overflow:hidden}
+ .avatar dl dd{width:120px; height:227px; float:left; position:relative;}
+
+ .avatar dl dd .c1{ position:absolute; top:20px; right:0px}
+
+ .avatar dl dd .c2{ position:absolute;bottom:0px; right:0px}
+
+.avatar2{ overflow:hidden; margin-bottom:200px; }
+.avatar2 .avatar2_89,.avatar2 .avatar2_140,.avatar2 .avatar2_250{ float:left; margin-top:15px; margin-left:5px; overflow:hidden}
+.avatar2 .avatar2_250 img,.avatar2 .avatar2_250{ width:235px; height:174px; margin-left:7px}
+.avatar2 .avatar2_140 img,.avatar2 .avatar2_140{ width:115px; height:85px;margin-left:5px}
+.avatar2 .avatar2_89 img,.avatar2 .avatar2_89{ width:70px; height:52px;margin-left:5px}
+
+.avatar2 .avatar2_btn{ width:140px; height:80px; text-align:center; position:absolute;bottom:10px;right:28px;}    
+.avatar2 .avatar2_btn p,.avatar2 .avatar2_btn h3{ text-align:center; color:#333}
+.avatar2 .avatar2_btn p{ height:22px; line-height:22px; color:#666}
+
+.upload{ width:445px; height:200px; background:#FFF;padding:10px; text-align:center; position:relative; overflow:hidden; margin:0 auto; z-index:10px}
+
+.upload .title2{ height:25px; border-bottom:#CCC solid 1px; position:relative; z-index:300;}
+.upload .title2 li{ height:25px; line-height:25px}
+.upload .title2 li.a1{ float:left; position:absolute; left:10px; width:100px; border:#CCC solid 1px;z-index:500; border-bottom:0; top:1px; background:#FFF; text-align:center; color:#03C}
+.upload .title2 li.a2{ float:right; padding-right:5px}
+.upload .upload_a{ width:425px; margin:0 auto; height:33px; padding:22px 0 8px 0; line-height:33px; text-align:left; position:relative}
+.upload .upload_a .c1,.upload .upload_a input{ float:left; margin-right:7px;}     
+.upload .upload_a .c1{ width:310px; height:22px; text-align:left; border:#CCC solid 1px; margin:5px 5px 0 5px}
+
+
+.upload .upload_a #upbtn{ top:22px; position:absolute; margin-left:10px;left:60px}
+
+.upload .mc{ width:425px; height:25px; background:#f5f5f5; margin:0 auto; line-height:25px; text-align:left}
+.upload .mc .left22{ float:left; padding-left:15px;} 
+.upload .mc .right22{ float:right; padding:0 20px 0 5px}
+.upload .mclist{ width:425px;  margin:0 auto;  text-align:left; height:140px !important; overflow:auto !important; margin:10px 0; position:relative}
+.lighttxt img{}
+.img_a{ background:#666;}
+.img_a p{ width:100px}
+
+
+
+
+
+
+
+.upload .mclist .left22{ float:left; padding-left:15px;} 
+.upload .mclist .right22{ float:right; padding:0 20px 0 5px}
+.upload .txt{ height:22px; line-height:22px; width:410px; position:absolute; top:190px;left:20px; text-align:left} 
+
+#fileQueue{ margin:0 auto !important;}
+
+.upload #fileQueue{  margin-top:20px; width:425px; position:relative; height:65px !important; overflow:auto}
+
+
+.uploadifyQueueItem {
+	font: 11px Verdana, Geneva, sans-serif;
+	border: 2px solid #E5E5E5;
+	background-color: #F5F5F5;
+	margin-top: 0px;
+	padding: 10px;
+	
+	
+}
+
+.avatar1 .avatar1_c .uploadifyQueueItem{  float:left; margin:0 !important; position:absolute; top:0 !important; right:0;	height:172px;
+	padding-top:55px;
+	width:330px;
+	padding-left:90px ; text-align:left;}
+	
+	
+	
+
+	
+	
+
+.uploadifyError {
+	border: 2px solid #FBCBBC !important;
+	background-color: #FDE5DD !important;
+}
+.uploadifyQueueItem .cancel {
+	float: right;
+}
+.uploadifyProgress {
+	background-color: #FFFFFF;
+	border-top: 1px solid #808080;
+	border-left: 1px solid #808080;
+	border-right: 1px solid #C5C5C5;
+	border-bottom: 1px solid #C5C5C5;
+	margin-top: 5px;
+	width: 200px;
+	height:12px;
+	text-align:right;
+	float:left;
+
+	
+	 
+} 
+.uploadifyProgressBar {
+	background-color: #0099FF;
+	width: 1px;
+	height: 12px;
+	float:left;
+
+}
+
+
+.upload #fileQueue .uploadifyQueueItem{ float:right; margin-right:15px; position:relative} 
+
+
+.upload .fileName{ position:absolute;bottom:10px;left:0; font-size:11px !important; }
+
+.upload #fileQueue .uploadifyQueueItem .percentage{ position:absolute; z-index:1000; bottom:11px; right:140px}
+
+#fileQueue .uploadifyError {
+	
+	background-color: #FDE5DD !important;
+}
+.upload #fileQueue .uploadifyQueueItem .cancel {
+
+	 position:absolute;bottom:10px;
+	 right:-15px;
+}
+
+
+
+
+
+#fileQueue .uploadifyQueueItem {
+	font: 11px Verdana, Geneva, sans-serif;
+	border: none;
+	background-color: #FFFFFF;
+	float:left;
+	z-index:1000;
+	position:absolute;
+}
+
+
+
+
+
+#fileQueue .percentage{ clear:both !important;}
+.fileName{ float:left}
+#fileQueue .cancel{ display:none;}
+
+
+
+.y {
+float:right;
+padding:10px;
+position:absolute;
+  z-index:9999;
+  right:0px;
+   _right:9px;
+  top:0px;
+
+}
+.flbc {
+background:url("cls.gif") no-repeat scroll 0 0 transparent;
+float:left;
+height:20px;
+overflow:hidden;
+text-indent:-9999px;
+width:20px;
+	
+}
+.flbc:hover
+{
+background-position:0 -20px
+}
+
+
+ 
+.avatar2 span.y{ display:none}
+
+
+.upload .mclist .right22{ padding-right:0; padding-top:10px}
+.upload .mclist .right22 input{ height:19px; width:78px; border:#b2b2b2 solid 1px;}
+.upload .mclist .right22 .a1{ width:29px}
+
+ 
+
+.mclist .img_a{  width:100px !important; margin:5px 14px; background:#fff;  display:inline-block ;*display:inline;*zoom:1;}
+.mclist .img_a .img{}
+.mclist .img_a span{ }
+.mclist .img_a span input{ width:100px; border:#CCC solid 1px; width:86px;  height:12px; font-size:12px; margin-top:4px; }
+.mclist .img_a span img{  margin:6px 0 0 3px}
+ 
+.avatar1_c .avatar1_v{ position:relative}
+
+.avatar1_c .avatar1_v .fileQueue .uploadifyQueueItem .uploadifyProgress .uploadifyProgressBar{ float:left !important}
+
+.avatar1 .avatar1_c .avatar1_v .uploadifyQueueItem .percentage{white-space:nowrap; float:left; margin-right:200px}
+
+ 
+
+.upload .c1 .uploadifyQueueItem,.upload .c1 .uploadifyQueueItem .uploadifyProgress { float:right !important; }
+
+.upload .c1,.upload{ overflow:hidden} 
+.upload .c1 .uploadifyQueueItem{ width:370px !important; margin:0  auto!important}
+
+
+
+
+
+
+#ppc_menu{ width:250px; background:#F00 !important;width: 280px;}
+width: 298px;
+
+.upload ul.title2 li{ float:left !important; border:#DCDCDE solid 1px; border-bottom:0; background: url(./images/sew-8.gif) repeat-x top; margin-right:5px; padding:0 8px;height:24px !important}
+.upload ul.title2 li a{ text-decoration:none; color:#666}
+.upload ul.title2 li.a1{ position:static; z-index:auto !important;  border:#DCDCDE solid 1px; border-bottom:0;height:25px !important; width:auto !important}

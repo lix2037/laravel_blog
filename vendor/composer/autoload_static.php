@@ -18,6 +18,7 @@ class ComposerStaticInit2216542b6dbeaefe0eb44b56cf147495
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
         '5e8fe2a5ffaded85af682684fe3bbf5a' => __DIR__ . '/..' . '/mews/captcha/src/helpers.php',
+        '31fa6c4d2c5d61e9eef258f27f1889ab' => __DIR__ . '/../..' . '/app/Http/Function/Function.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -304,6 +305,10 @@ class ComposerStaticInit2216542b6dbeaefe0eb44b56cf147495
 
     public static $classMap = array (
         'CreateCategoryTable' => __DIR__ . '/../..' . '/database/migrations/2016_12_05_171421_create_category_table.php',
+        'CreateDeliverNoteTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_03_154637_create_deliver_note_table.php',
+        'CreateDriverTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_03_155817_create_driver_table.php',
+        'CreateGdTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_03_152316_create_gd_table.php',
+        'CreateMaterialTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_03_160303_create_material_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
